@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JGkG1Qo+5JVFKm8I97wtJ9xG7Bun8X9P2MrbEg0AwHB7wWlVznE3kq4kgekAto1BXJA46zL9bvuakSnRdTM8wg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\11036700\\source\\repos\\Phase_4_Final_assessment\\Testing(Selenium)\\Testing(Selenium).csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\11036700\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\11036700\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

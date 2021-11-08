@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+    double num = ViewBag.Amount * 100;
+}
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+
+    <title>Payment</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex  text-center text-white bg-dark" style="margin-top:10%;height:50%;">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="px-3">
+                <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-info w-24  text-xs font-medium">Return to cart</a>
+                <form asp-action="Charge" method="POST">
+                    <h2 style="margin: 5px 0 10px 0">Total Amount: $ @ViewBag.Amount</h2>
+                    <script src="//checkout.stripe.com/v2/checkout.js"
+                            class="stripe-button"
+                            data-key="pk_test_51JaFRgSC1tqaOG4n6Yqw1ecAJbe8C6E8xvxoVsW5JSu4jJqtPgU3uWO9mUMDllwVJw884wLHPhjc5mwwCdZL576l00KtVFiOGC"
+                            data-locale="auto"
+                            data-description="Payment"
+                            data-amount="@num"
+                            >
+                    </script>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+
+</body>
+</html>

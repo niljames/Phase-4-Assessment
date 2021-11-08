@@ -1,0 +1,42 @@
+﻿
+@model IEnumerable<Phase_4_Final_assessment.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    body{
+        background-color:black;
+    }
+</style>
+<link rel="stylesheet" href="~/css/Default.css" />
+<div class=" py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4" style="margin-top:10px;">
+                    <div class="card shadow-sm">
+                        <img src="@item.Pimage" width="200" height="200" style="margin:20px auto;" />
+                        <div class="card-body">
+                            <ul>
+                                <li>@item.Pname</li>
+                                <li>Price : $ @item.Price</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center" style="margin-left:15%">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-info" id="@item.ProductId" asp-route-id="@item.ProductId" asp-action="Details" style="margin-right:10px">View Details</a>
+                                    <a class="btn btn-sm btn-outline-success" asp-route-id="@item.ProductId" asp-controller="Cart" asp-action="Buy"  name="buy @item.ProductId">Add to Cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

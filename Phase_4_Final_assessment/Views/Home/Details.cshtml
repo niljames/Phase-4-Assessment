@@ -1,0 +1,30 @@
+﻿@model Phase_4_Final_assessment.Models.Product
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="card text-center">
+    <div class="card-header">
+        <img src="@Model.Pimage" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body" style="margin:0 auto;">
+        <table>
+            <tr>
+                <td class="col-sm-2">@Html.DisplayNameFor(model => model.Pname)</td>
+                <td class="col-sm-10">@Html.DisplayFor(model => model.Pname)</td>
+            </tr>
+            <tr>
+                <td class="col-sm-2">@Html.DisplayNameFor(model => model.Price)</td>
+                <td class="col-sm-10">$ @Html.DisplayFor(model => model.Price)</td>
+            </tr>
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+        <a class="btn btn-sm btn-outline-info" asp-route-id="@Model.ProductId" asp-controller="Cart" name="Add" asp-action="Buy">Add to Cart</a>
+        <a class="btn btn-sm btn-outline-success" asp-action="Index">Back to List</a>
+    </div>
+</div>

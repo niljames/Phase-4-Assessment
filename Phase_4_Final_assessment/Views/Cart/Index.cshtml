@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css" />
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Sub Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.cart)
+            {
+                <tr>
+                    <td>@item.product.ProductId</td>
+                    <td>@item.product.Pname</td>
+                    <td>$ @item.product.Price</td>
+                    <td>@item.Quantity</td>
+                    <td>$ @(item.product.Price*item.Quantity)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <a class="btn btn-sm btn-outline-success" asp-controller="Home" asp-action="Index" name="back">Back</a>
+    <a class="btn btn-sm btn-outline-success" asp-action="Checkout" name="checkout">Checkout</a>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</body>

@@ -1,0 +1,8 @@
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Settings.job
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Testing(Selenium).exe
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Testing(Selenium).dll
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Testing(Selenium).deps.json
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Testing(Selenium).runtimeconfig.json
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Testing(Selenium).pdb
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\Newtonsoft.Json.dll
+C:\Users\11036700\source\repos\Phase_4_Final_assessment\Testing(Selenium)\obj\Release\net5.0\PubTmp\Out\app_data\Jobs\Triggered\Testing(Selenium)\WebDriver.dll
